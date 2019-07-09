@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://nbrp.jp/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://nbrp.jp/ontology/>
+    dcterms:contributor "Hiromi Kanegae"@en, "Hiroshi Masuya"@en, "Shoko Kawamoto"@en, "Shuichi Kawashima"@en, "Terue Takatsuki"@en ;
+    sio:seeAlso "<http://www.oecd.org/sti/emerging-tech/23547743.pdf>" ;
+    a owl:Ontology ;
+    rdfs:label "NBRP ontology"@en ;
+    <http://www.w3.org/2004/02/skos/core#definition> "NBRPO is an ontology which is intended for describing meta information of biological resources retained and provided by biological resource centers."@en .
+
+:BiologicalResource
+    a owl:Class ;
+    rdfs:label "biological resource"@en ;
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:allValuesFrom sio:SIO_010000 ;
+        owl:onProperty :organism
+    ], [
+        a owl:Restriction ;
+        owl:allValuesFrom sio:SIO_010056 ;
+        owl:onProperty sio:SIO_001279
+    ] ;
+    <http://www.w3.org/2004/02/skos/core#definition> "a biological resource retained and provided by a biological resource center, which includes  culturable organisms (e.g. micro-organisms, plant, animal and human cells), replicable parts of these (e.g. genomes, plasmids, viruses, cDNAs), viable but not yet culturable organisms, cells and tissues."@en .
+
+:Habitat
+    a owl:Class ;
+    rdfs:label "habitat"@en .
+
+:Location
+    a owl:Class ;
+    rdfs:label "location"@en .
+
+:organism
+    a owl:ObjectProperty ;
+    rdfs:range sio:SIO_010000 .
+
+:phenotype
+    a owl:ObjectProperty ;
+    rdfs:range sio:SIO_010056 .
+
