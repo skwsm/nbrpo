@@ -7,8 +7,8 @@ NBRPO is an ontology which is intended for describing meta information of biolog
 
 # Contributors
 
-Hiromi Kanegae (NARO)
-Shoko Kawamoto (NIG)
-Shuichi Kawashima (DBCLS)
-Hiroshi Masuya (Riken)
-Terue Takatsuki (DBCLS)
+- Hiromi Kanegae (NARO)
+- Shoko Kawamoto (NIG)
+- Shuichi Kawashima (DBCLS)
+- Hiroshi Masuya (Riken)
+- Terue Takatsuki (DBCLS)
