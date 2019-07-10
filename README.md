@@ -3,7 +3,7 @@ NBRPO is an ontology which is intended for describing meta information of biolog
 
 # RDF data model
 
-![RDF data model](./misc/nbrpo-draft-01.jpg "RDF data model")
+![RDF data model](./misc/nbrpo-draft-02.jpg "RDF data model")
 
 # Contributors
 
