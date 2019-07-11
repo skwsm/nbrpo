@@ -5,6 +5,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
 <http://nbrp.jp/ontology/>
@@ -12,21 +13,71 @@
     sio:seeAlso "<http://www.oecd.org/sti/emerging-tech/23547743.pdf>" ;
     a owl:Ontology ;
     rdfs:label "NBRP ontology"@en ;
-    <http://www.w3.org/2004/02/skos/core#definition> "NBRPO is an ontology which is intended for describing meta information of biological resources retained and provided by biological resource centers."@en .
+    skos:definition "NBRPO is an ontology which is intended for describing meta information of biological resources retained and provided by biological resource centers."@en .
 
 :BiologicalResource
     a owl:Class ;
-    rdfs:label "biological resource"@en ;
+    rdfs:label "Biological resource"@en ;
     rdfs:subClassOf [
         a owl:Restriction ;
         owl:allValuesFrom sio:SIO_010000 ;
         owl:onProperty :organism
     ], [
         a owl:Restriction ;
+        owl:allValuesFrom :BiologicalResourceCenter ;
+        owl:onProperty sio:SIO_000066
+    ], [
+        a owl:Restriction ;
         owl:allValuesFrom sio:SIO_010056 ;
         owl:onProperty sio:SIO_001279
     ] ;
-    <http://www.w3.org/2004/02/skos/core#definition> "a biological resource retained and provided by a biological resource center, which includes  culturable organisms (e.g. micro-organisms, plant, animal and human cells), replicable parts of these (e.g. genomes, plasmids, viruses, cDNAs), viable but not yet culturable organisms, cells and tissues."@en .
+    skos:definition "a biological resource retained and provided by a biological resource center, which includes  culturable organisms (e.g. micro-organisms, plant, animal and human cells), replicable parts of these (e.g. genomes, plasmids, viruses, cDNAs), viable but not yet culturable organisms, cells and tissues."@en .
+
+:BiologicalResourceCenter
+    a owl:Class ;
+    rdfs:label "Biological resource center"@en ;
+    rdfs:subClassOf <http://www.w3.org/ns/org#Organization> .
+
+:BiologicalResourceStatus
+    a owl:Class ;
+    rdfs:label "Biological resource status"@en ;
+    skos:definition "Category of the status of biological resources which is intended to be used for information filtering"@en .
+
+:BiologicalResourceType
+    a owl:Class ;
+    rdfs:label "Biological resource type"@en ;
+    skos:definition "Category of the type of biological resources which is intended to be used for information filtering"@en .
+
+<http://nbrp.jp/ontology/BiologicalResourceType#CellLine>
+    a :BiologicalResourceType, owl:NamedIndividual ;
+    rdfs:label "Cell line"@en .
+
+<http://nbrp.jp/ontology/BiologicalResourceType#Clone>
+    a :BiologicalResourceType, owl:NamedIndividual ;
+    rdfs:label "Clone"@en .
+
+<http://nbrp.jp/ontology/BiologicalResourceType#ESCellLine>
+    a :BiologicalResourceStatus, owl:NamedIndividual .
+
+<http://nbrp.jp/ontology/BiologicalResourceType#FrizenEmbryo>
+    a :BiologicalResourceStatus, owl:NamedIndividual .
+
+<http://nbrp.jp/ontology/BiologicalResourceType#FrozenOvery>
+    a :BiologicalResourceStatus, owl:NamedIndividual .
+
+<http://nbrp.jp/ontology/BiologicalResourceType#FrozenSperm>
+    a :BiologicalResourceStatus, owl:NamedIndividual .
+
+<http://nbrp.jp/ontology/BiologicalResourceType#GenomicDNA>
+    a :BiologicalResourceType, owl:NamedIndividual ;
+    rdfs:label "Genomic DNA"@en .
+
+<http://nbrp.jp/ontology/BiologicalResourceType#LiveOrganism>
+    a :BiologicalResourceStatus, owl:NamedIndividual .
+
+<http://nbrp.jp/ontology/BiologicalResourceType#Strain>
+    a :BiologicalResourceType, owl:NamedIndividual ;
+    rdfs:label "Strain"@en .
 
 :Habitat
     a owl:Class ;
