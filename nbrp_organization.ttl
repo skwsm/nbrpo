@@ -1,0 +1,593 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nbrp: <http://purl.org/jp/nbrp/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix NCI: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+
+nbrp:NBRP10_1
+    dcterms:identifier "NBRP10_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Banno Yutaka"@en, "伴野　豊"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人九州大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=silkworm> .
+
+nbrp:NBRP10_2
+    dcterms:identifier "NBRP10_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Shimada Toru"@en, "嶋田　透"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人東京大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=silkworm> .
+
+nbrp:NBRP10_3
+    dcterms:identifier "NBRP10_3" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Kajiura Zenta"@en, "梶浦　善太"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人信州大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=silkworm> .
+
+nbrp:NBRP11_1
+    dcterms:identifier "NBRP11_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Mitani Shohei"@en, "三谷　昌平"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "学校法人東京女子医科大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=celegans> .
+
+nbrp:NBRP12_1
+    dcterms:identifier "NBRP12_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Kobayashi Masatomo"@en, "小林 正智"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "理化学研究所バイオリソース研究センター"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=arabidopsis> .
+
+nbrp:NBRP13_1
+    dcterms:identifier "NBRP13_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Sato Yutaka"@en, "佐藤　豊"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "大学共同利用機関法人情報・システム研究機構"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=rice> .
+
+nbrp:NBRP13_2
+    dcterms:identifier "NBRP13_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Kumamaru Toshiyuki"@en, "熊丸　敏博"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人九州大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=rice> .
+
+nbrp:NBRP14_1
+    dcterms:identifier "NBRP14_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Nasuda Shuhei"@en, "那須田　周平"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人京都大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=wheat> .
+
+nbrp:NBRP15_1
+    dcterms:identifier "NBRP15_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Sato Kazuhiro"@en, "佐藤和広"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人岡山大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=barley> .
+
+nbrp:NBRP16_1
+    dcterms:identifier "NBRP16_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Akashi Ryo"@en, "明石　良"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人宮崎大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=beans> .
+
+nbrp:NBRP16_2
+    dcterms:identifier "NBRP16_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Sato Shusei"@en, "佐藤　修正"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人東北大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=beans> .
+
+nbrp:NBRP17_1
+    dcterms:identifier "NBRP17_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Ezura Hiroshi"@en, "江面　浩"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人筑波大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=tomato> .
+
+nbrp:NBRP17_2
+    dcterms:identifier "NBRP17_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Aoki Ko"@en, "青木　考"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "公立大学法人大阪府立大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=tomato> .
+
+nbrp:NBRP17_3
+    dcterms:identifier "NBRP17_3" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Yano Kentaro"@en, "矢野　健太郎"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "学校法人明治大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=tomato> .
+
+nbrp:NBRP18_1
+    dcterms:identifier "NBRP18_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Kusaba Makoto"@en, "草場　信"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人広島大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=chrysanthemum> .
+
+nbrp:NBRP19_1
+    dcterms:identifier "NBRP19_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Nitasaka Eiji"@en, "仁田坂　英二"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人九州大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=morningGlory> .
+
+nbrp:NBRP19_2
+    dcterms:identifier "NBRP19_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Hoshino Atsushi"@en, "星野敦"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "大学共同利用機関法人自然科学研究機構"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=morningGlory> .
+
+nbrp:NBRP1_1
+    dcterms:identifier "NBRP1_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Yoshiki Atsushi"@en, "吉木　淳"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "理化学研究所バイオリソース研究センター"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=mouseBrc> .
+
+nbrp:NBRP20_1
+    dcterms:identifier "NBRP20_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Kawachi Masanobu"@en, "河地　正伸"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立研究開発法人国立環境研究所"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=algae> .
+
+nbrp:NBRP20_2
+    dcterms:identifier "NBRP20_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Kawai Hiroshi"@en, "川井　浩史"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人神戸大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=algae> .
+
+nbrp:NBRP20_3
+    dcterms:identifier "NBRP20_3" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Kogame Kazuhiro"@en, "小亀　一弘"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人北海道大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=algae> .
+
+nbrp:NBRP21_1
+    dcterms:identifier "NBRP21_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Fujishima Masahiro"@en, "藤島　政博"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人山口大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=paramecium> .
+
+nbrp:NBRP22_1
+    dcterms:identifier "NBRP22_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Kamimura Yoichiro"@en, "上村　陽一郎"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立研究開発法人理化学研究所"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=cellularSlimeMolds> .
+
+nbrp:NBRP22_2
+    dcterms:identifier "NBRP22_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Kuwayama Shuichi"@en, "桑山　秀一"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人筑波大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=cellularSlimeMolds> .
+
+nbrp:NBRP23_1
+    dcterms:identifier "NBRP23_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Nakamura Taro"@en, "中村　太郎"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "公立大学法人大阪市立大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=yeast> .
+
+nbrp:NBRP23_2
+    dcterms:identifier "NBRP23_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Sugiyama Minetaka"@en, "杉山　峰崇"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人大阪大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=yeast> .
+
+nbrp:NBRP23_3
+    dcterms:identifier "NBRP23_3" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Kitamura Kenji"@en, "北村　憲司"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人広島大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=yeast> .
+
+nbrp:NBRP24_1
+    dcterms:identifier "NBRP24_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Niki Hironori"@en, "仁木　宏典"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "大学共同利用機関法人情報・システム研究機構"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=ecolistrain> .
+
+nbrp:NBRP24_2
+    dcterms:identifier "NBRP24_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Katayama Tsutomu"@en, "片山　勉"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人九州大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=ecolistrain> .
+
+nbrp:NBRP25_1
+    dcterms:identifier "NBRP25_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Okuma Moriya"@en, "大熊 盛也"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "理化学研究所バイオリソース研究センター"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=microbe> .
+
+nbrp:NBRP26_1
+    dcterms:identifier "NBRP26_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Yaguchi Ttakashi"@en, "矢口　貴志"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人千葉大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=pathogenicEukaryoticMicroorganisms> .
+
+nbrp:NBRP26_2
+    dcterms:identifier "NBRP26_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Hirayama Kenji"@en, "平山　謙二"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人長崎大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=pathogenicEukaryoticMicroorganisms> .
+
+nbrp:NBRP27_1
+    dcterms:identifier "NBRP27_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Tanaka Kaori"@en, "田中　香お里"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人岐阜大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=pathogenicBacteria> .
+
+nbrp:NBRP27_2
+    dcterms:identifier "NBRP27_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Iida Tetsuya"@en, "飯田　哲也"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人　大阪大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=pathogenicBacteria> .
+
+nbrp:NBRP27_3
+    dcterms:identifier "NBRP27_3" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Tomota Haruyoshi"@en, "富田　治芳"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人群馬大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=pathogenicBacteria> .
+
+nbrp:NBRP28_1
+    dcterms:identifier "NBRP28_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Nagamura Tokiko"@en, "長村　登紀子"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人東京大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=cordBloodStemCell> .
+
+nbrp:NBRP28_2
+    dcterms:identifier "NBRP28_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Nakamura Yukio"@en, "中村　幸夫"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立研究開発法人理化学研究所"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=cordBloodStemCell> .
+
+nbrp:NBRP29_1
+    dcterms:identifier "NBRP29_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Nakamura Yukio"@en, "中村 幸夫"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "理化学研究所バイオリソース研究センター"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=cell> .
+
+nbrp:NBRP2_1
+    dcterms:identifier "NBRP2_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Asano Masahide"@en, "浅野　雅秀"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人京都大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=rat> .
+
+nbrp:NBRP2_2
+    dcterms:identifier "NBRP2_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Yoshiki Atsushi"@en, "吉木　淳"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立研究開発法人理化学研究所"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=rat> .
+
+nbrp:NBRP2_3
+    dcterms:identifier "NBRP2_3" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Mashimo Tomoji"@en, "真下　知士"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立学校法人大阪大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=rat> .
+
+nbrp:NBRP30_1
+    dcterms:identifier "NBRP30_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Murata Takehide"@en, "村田 武英"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "理化学研究所バイオリソース研究センター"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=dna> .
+
+nbrp:NBRP3_1
+    dcterms:identifier "NBRP3_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Nakamura Katsuki"@en, "中村　克樹"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人京都大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=monkey> .
+
+nbrp:NBRP3_2
+    dcterms:identifier "NBRP3_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Nanbu Atushi"@en, "南部　篤"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "大学共同利用機関法人自然科学研究機構"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=monkey> .
+
+nbrp:NBRP4_1
+    dcterms:identifier "NBRP4_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Matuda Yoichi"@en, "松田　洋一"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人名古屋大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=chickenQuail> .
+
+nbrp:NBRP5_1
+    dcterms:identifier "NBRP5_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Ogino Hajime"@en, "荻野　肇"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人広島大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=xenopus> .
+
+nbrp:NBRP6_1
+    dcterms:identifier "NBRP6_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Okamoto Hitoshi"@en, "岡本　仁"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立研究開発法人理化学研究所"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=zebrafish> .
+
+nbrp:NBRP6_2
+    dcterms:identifier "NBRP6_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Kawakami Koichi"@en, "川上　浩一"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "大学共同利用機関法人情報・システム研究機構"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=zebrafish> .
+
+nbrp:NBRP6_3
+    dcterms:identifier "NBRP6_3" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Higashijima Shinichi"@en, "東島 眞一"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "大学共同利用機関法人 自然科学研究機構"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=zebrafish> .
+
+nbrp:NBRP7_1
+    dcterms:identifier "NBRP7_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Naruse Kiyoshi"@en, "成瀬　清"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "大学共同利用機関法人自然科学研究機構"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=medaka> .
+
+nbrp:NBRP7_2
+    dcterms:identifier "NBRP7_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Matuda Masaru"@en, "松田　勝"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人宇都宮大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=medaka> .
+
+nbrp:NBRP7_3
+    dcterms:identifier "NBRP7_3" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Akashi Ryo"@en, "明石　良"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人宮崎大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=medaka> .
+
+nbrp:NBRP8_1
+    dcterms:identifier "NBRP8_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Sasakura Yasunori"@en, "笹倉　靖徳"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人筑波大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=marinebio> .
+
+nbrp:NBRP8_2
+    dcterms:identifier "NBRP8_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Sato Yutaka"@en, "佐藤 ゆたか"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人京都大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=marinebio> .
+
+nbrp:NBRP8_3
+    dcterms:identifier "NBRP8_3" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Yoshida Masnabu"@en, "吉田　学"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人 東京大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=marinebio> .
+
+nbrp:NBRP9_1
+    dcterms:identifier "NBRP9_1" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Saito Kuniaki"@en, "齋藤　都暁"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "大学共同利用機関法人情報・システム研究機構"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=drosophila> .
+
+nbrp:NBRP9_2
+    dcterms:identifier "NBRP9_2" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Takano Toshiyuki"@en, "高野　敏行"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "国立大学法人京都工芸繊維大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=drosophila> .
+
+nbrp:NBRP9_3
+    dcterms:identifier "NBRP9_3" ;
+    nbrp:tanto [
+        a NCI:contact ;
+        foaf:name "Awasaki Takeshi"@en, "粟崎　健"@ja
+    ] ;
+    a org:Organization ;
+    rdfs:label "学校法人杏林学園　杏林大学"@ja ;
+    foaf:homepage <http://nbrp.jp/report/reportProject.jsp?project=drosophila> .
+
