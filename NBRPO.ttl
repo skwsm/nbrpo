@@ -16,9 +16,22 @@
     skos:definition "NBRPO is an ontology which is intended for describing meta information of biological resources retained and provided by biological resource centers."@en .
 
 :BiologicalResource
+    <http://purl.org/dc/elements/1.1/identifier> "BiologicalResource" ;
     a owl:Class ;
     rdfs:label "Biological resource"@en ;
     rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty sio:SIO_000223 ;
+        owl:someValuesFrom :BiologicalResourceStatus
+    ], [
+        a owl:Restriction ;
+        owl:onProperty sio:SIO_000223 ;
+        owl:someValuesFrom :BiologicalResourceType
+    ], [
+        a owl:Restriction ;
+        owl:onProperty sio:SIO_000223 ;
+        owl:someValuesFrom :GenomicFeature
+    ], [
         a owl:Restriction ;
         owl:allValuesFrom sio:SIO_010000 ;
         owl:onProperty :organism
@@ -43,6 +56,21 @@
     rdfs:label "Biological resource status"@en ;
     skos:definition "Category of the status of biological resources which is intended to be used for information filtering"@en .
 
+<http://nbrp.jp/ontology/BiologicalResourceStatus#ESCellLine>
+    a :BiologicalResourceStatus, owl:NamedIndividual .
+
+<http://nbrp.jp/ontology/BiologicalResourceStatus#FrozenEmbryo>
+    a :BiologicalResourceStatus, owl:NamedIndividual .
+
+<http://nbrp.jp/ontology/BiologicalResourceStatus#FrozenSperm>
+    a :BiologicalResourceStatus, owl:NamedIndividual .
+
+<http://nbrp.jp/ontology/BiologicalResourceStatus#FrozonOvery>
+    a :BiologicalResourceStatus, owl:NamedIndividual .
+
+<http://nbrp.jp/ontology/BiologicalResourceStatus#LiveOrganism>
+    a :BiologicalResourceStatus, owl:NamedIndividual .
+
 :BiologicalResourceType
     a owl:Class ;
     rdfs:label "Biological resource type"@en ;
@@ -56,28 +84,19 @@
     a :BiologicalResourceType, owl:NamedIndividual ;
     rdfs:label "Clone"@en .
 
-<http://nbrp.jp/ontology/BiologicalResourceType#ESCellLine>
-    a :BiologicalResourceStatus, owl:NamedIndividual .
-
-<http://nbrp.jp/ontology/BiologicalResourceType#FrizenEmbryo>
-    a :BiologicalResourceStatus, owl:NamedIndividual .
-
-<http://nbrp.jp/ontology/BiologicalResourceType#FrozenOvery>
-    a :BiologicalResourceStatus, owl:NamedIndividual .
-
-<http://nbrp.jp/ontology/BiologicalResourceType#FrozenSperm>
-    a :BiologicalResourceStatus, owl:NamedIndividual .
-
 <http://nbrp.jp/ontology/BiologicalResourceType#GenomicDNA>
     a :BiologicalResourceType, owl:NamedIndividual ;
     rdfs:label "Genomic DNA"@en .
 
-<http://nbrp.jp/ontology/BiologicalResourceType#LiveOrganism>
-    a :BiologicalResourceStatus, owl:NamedIndividual .
-
 <http://nbrp.jp/ontology/BiologicalResourceType#Strain>
     a :BiologicalResourceType, owl:NamedIndividual ;
     rdfs:label "Strain"@en .
+
+:GenomicFeature
+    <http://purl.org/dc/elements/1.1/identifier> "GenomicFeature" ;
+    a owl:Class ;
+    rdfs:label "Genomic feature"@en ;
+    skos:definition "Container class for genomic features of a biological resource such as allele and gene."@en .
 
 :Habitat
     a owl:Class ;
